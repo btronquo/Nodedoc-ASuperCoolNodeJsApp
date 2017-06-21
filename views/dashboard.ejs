@@ -1,0 +1,26 @@
+<% include ./partials/header %>
+<% include ./partials/navbar %>
+
+<div class="container">
+  <h3>Welcome <%= currentUser.firstname %> <%= currentUser.lastname %></h3>
+  <p>Id: <%= currentUser.id %></p>
+  <div class="center">
+
+    <hr>
+    <h4 class="text-danger">You have a rendez-vous - Monday 06 April 2016 @13h30</h4>
+    <a href="#"><span class="label label-warning">Cancel</span></a>
+    <hr>
+
+    <hr>
+    <h4 class="text-info">You don't have any rendez-vous</h4>
+    <a href="#"><span class="label label-info">New Rendez-vous</span></a>
+    <hr>
+
+    <hr>
+    <h4 class="text-success">Your Last rendez-vous was Monday 06 April 2016 @13h30</h4>
+    <a href="#"><span class="label label-success">New Rendez-vous</span></a>
+    <hr>
+
+  </div>
+</div>
+<% include ./partials/footer %>
